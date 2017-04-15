@@ -1,7 +1,6 @@
 body {
   background-color: #FCF8E0;
-  font-family: sans-serif;
-  font-weight: light;
+  font-family: 'Raleway', sans-serif;
 }
 
 .wrapper {
@@ -53,7 +52,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: #2D3235;
-  font-weight: bold;
+  font-weight: normal;
   width: 150px;
   height: 35px;
   background-color: #DAA51E;
@@ -277,8 +276,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #fffff9;
-  font-weight: bold;
+  color: #3a2f21;
+  font-weight: normal;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
