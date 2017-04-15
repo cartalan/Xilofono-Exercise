@@ -1,5 +1,3 @@
-var notes = $('.sound');
-
 // do 0
 // re 1
 // mi 2
@@ -8,6 +6,8 @@ var notes = $('.sound');
 // la 5
 // si 6
 // do+ 7
+
+var notes = $('.sound');
 
 var note1 = [0,0,0,3,5,  0,0,0,3,5,  3,3,2,2,1,1,0,  0,0,0,2,4,  0,0,0,2,4,  7,7,6,5,4,3,1,0];
 var tempo1 = [1,1,1,2,3,  1,1,1,2,3,  1,1,1,1,1,1,3,  1,1,1,2,3,  1,1,1,2,3,  2,1,1,1,1,1,1,1];
@@ -19,7 +19,10 @@ var note3 = [0,0,1,0,3,2,  0,0,1,0,4,3,  0,0,7,5,3,3,2,1,  6,6,5,3,4,3];
 var tempo3 = [2,1,2,2,2,3,  2,1,2,2,2,3,  2,1,2,2,2,2,2,3,  2,1,2,2,2,3];
 
 var note4 = [0,0,4,4,5,5,4,5,5,2,2,1,1,0,  4,4,3,3,2,2,1,4,4,3,3,2,2,1,  0,0,4,4,5,5,4,3,3,2,2,1,1,0];
-var tempo4 =[2,2,2,2,2,2,4,2,2,2,2,2,2,3,  2,2,2,2,2,2,4,2,2,2,2,2,2,3,  2,2,2,2,2,2,4,2,2,2,2,2,2,3];
+var tempo4 = [2,2,2,2,2,2,4,2,2,2,2,2,2,3,  2,2,2,2,2,2,4,2,2,2,2,2,2,3,  2,2,2,2,2,2,4,2,2,2,2,2,2,3];
+
+var note5 = [7,7,5,6,4,7,7,5,6,4,7,7,6,5,4,3,1,  6,6,5,4,3,1,1,2,3,4,4,3,2,1,0];
+var tempo5 =[1,2,1,1,1,1,2,1,1,1,1,2,1,1,1,1,2,  1,2,1,1,1,1,2,1,1,1,2,1,1,1,2];
 
 $('.note').click(function() {
   var num = parseInt(this.id);
@@ -62,13 +65,28 @@ $('#btn4').click(function() {
   }
 });
 
+$('#btn5').click(function() {
+  var count = 0;
+  for(var i= 0; i < note5.length; i++) {
+    setTimeout(function(sound) {
+      play(note5[sound]);
+    }, rhythm5(i) * 350, i);
+  }
+});
+
 function play(num) {
   notes[num].pause();
   notes[num].currentTime = 0;
   notes[num].play();
-  $("#" + num).css("font-weight", "bold");
+  $("#" + num).css({
+    "font-weight": "bold",
+    "color": "#FCFBE3"
+  });
   setTimeout(function() {
-    $("#" + num).css("font-weight", "normal");
+    $("#" + num).css({
+      "font-weight": "normal",
+      "color": "#3a2f21"
+    });
   }, 300);
 }
 
@@ -100,6 +118,14 @@ function rhythm4(num) {
   var count = 0;
   for (var i = 0; i < num ; i++) {
     count = count + tempo4[i];
+  }
+  return count;
+}
+
+function rhythm5(num) {
+  var count = 0;
+  for (var i = 0; i < num ; i++) {
+    count = count + tempo5[i];
   }
   return count;
 }

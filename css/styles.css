@@ -44,15 +44,25 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 700px;
-  margin: auto;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -72,15 +82,19 @@ body {
   margin-right: 3px;
 }
 .btn-2:before {
-  content: 'Christmas carol';
+  content: 'Christmas Carol';
   margin-right: 3px;
 }
 .btn-3:before {
-  content: 'Birthday';
+  content: 'Happy Birthday';
   margin-right: 3px;
 }
 .btn-4:before {
   content: 'Twinkle Twinkle';
+  margin-right: 3px;
+}
+.btn-5:before {
+  content: 'Cielito Lindo';
   margin-right: 3px;
 }
 .btn:active {
