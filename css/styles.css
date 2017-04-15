@@ -40,6 +40,14 @@ body {
   box-shadow: 1px 1px #3a2f21, 1px 1px #3a2f21, 2px 2px #3a2f21, 3px 3px #3a2f21;
 }
 
+.bnt-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 700px;
+  margin: auto;
+}
+
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,8 +67,20 @@ body {
   border-radius: 5px;
   box-shadow: 1px 1px #806112, 1px 1px #806112, 2px 2px #806112;
 }
-.btn:before {
+.btn-1:before {
   content: 'La Cucaracha';
+  margin-right: 3px;
+}
+.btn-2:before {
+  content: 'Christmas carol';
+  margin-right: 3px;
+}
+.btn-3:before {
+  content: 'Birthday';
+  margin-right: 3px;
+}
+.btn-4:before {
+  content: 'Twinkle Twinkle';
   margin-right: 3px;
 }
 .btn:active {
@@ -68,7 +88,7 @@ body {
   color: #393f43;
 }
 
-.tor1, .tor2 {
+.screw1, .screw2 {
   width: 20px;
   height: 20px;
   background-color: #CCCCCC;
@@ -77,10 +97,10 @@ body {
   box-shadow: 1px 1px #999999, 1px 1px #999999;
 }
 
-.tor1-do1 {
+.screw1-do1 {
   top: 105px;
 }
-.tor1-do1:after {
+.screw1-do1:after {
   content: '|';
   color: #999999;
   position: absolute;
@@ -89,10 +109,10 @@ body {
   -webkit-transform: translateX(-50%) rotate(8deg);
           transform: translateX(-50%) rotate(8deg);
 }
-.tor1-re {
+.screw1-re {
   top: 95px;
 }
-.tor1-re:after {
+.screw1-re:after {
   content: '|';
   color: #999999;
   position: absolute;
@@ -101,10 +121,10 @@ body {
   -webkit-transform: translateX(-50%) rotate(54deg);
           transform: translateX(-50%) rotate(54deg);
 }
-.tor1-mi {
+.screw1-mi {
   top: 85px;
 }
-.tor1-mi:after {
+.screw1-mi:after {
   content: '|';
   color: #999999;
   position: absolute;
@@ -113,10 +133,10 @@ body {
   -webkit-transform: translateX(-50%) rotate(48deg);
           transform: translateX(-50%) rotate(48deg);
 }
-.tor1-fa {
+.screw1-fa {
   top: 75px;
 }
-.tor1-fa:after {
+.screw1-fa:after {
   content: '|';
   color: #999999;
   position: absolute;
@@ -125,10 +145,10 @@ body {
   -webkit-transform: translateX(-50%) rotate(22deg);
           transform: translateX(-50%) rotate(22deg);
 }
-.tor1-sol {
+.screw1-sol {
   top: 65px;
 }
-.tor1-sol:after {
+.screw1-sol:after {
   content: '|';
   color: #999999;
   position: absolute;
@@ -137,10 +157,10 @@ body {
   -webkit-transform: translateX(-50%) rotate(63deg);
           transform: translateX(-50%) rotate(63deg);
 }
-.tor1-la {
+.screw1-la {
   top: 55px;
 }
-.tor1-la:after {
+.screw1-la:after {
   content: '|';
   color: #999999;
   position: absolute;
@@ -149,10 +169,10 @@ body {
   -webkit-transform: translateX(-50%) rotate(97deg);
           transform: translateX(-50%) rotate(97deg);
 }
-.tor1-si {
+.screw1-si {
   top: 45px;
 }
-.tor1-si:after {
+.screw1-si:after {
   content: '|';
   color: #999999;
   position: absolute;
@@ -161,10 +181,10 @@ body {
   -webkit-transform: translateX(-50%) rotate(17deg);
           transform: translateX(-50%) rotate(17deg);
 }
-.tor1-do2 {
+.screw1-do2 {
   top: 35px;
 }
-.tor1-do2:after {
+.screw1-do2:after {
   content: '|';
   color: #999999;
   position: absolute;
@@ -174,10 +194,10 @@ body {
           transform: translateX(-50%) rotate(38deg);
 }
 
-.tor2-do1 {
+.screw2-do1 {
   top: 175px;
 }
-.tor2-do1:after {
+.screw2-do1:after {
   content: '|';
   color: #999999;
   position: absolute;
@@ -186,10 +206,10 @@ body {
   -webkit-transform: translateX(-50%) rotate(14deg);
           transform: translateX(-50%) rotate(14deg);
 }
-.tor2-re {
+.screw2-re {
   top: 165px;
 }
-.tor2-re:after {
+.screw2-re:after {
   content: '|';
   color: #999999;
   position: absolute;
@@ -198,10 +218,10 @@ body {
   -webkit-transform: translateX(-50%) rotate(27deg);
           transform: translateX(-50%) rotate(27deg);
 }
-.tor2-mi {
+.screw2-mi {
   top: 155px;
 }
-.tor2-mi:after {
+.screw2-mi:after {
   content: '|';
   color: #999999;
   position: absolute;
@@ -210,10 +230,10 @@ body {
   -webkit-transform: translateX(-50%) rotate(4deg);
           transform: translateX(-50%) rotate(4deg);
 }
-.tor2-fa {
+.screw2-fa {
   top: 145px;
 }
-.tor2-fa:after {
+.screw2-fa:after {
   content: '|';
   color: #999999;
   position: absolute;
@@ -222,10 +242,10 @@ body {
   -webkit-transform: translateX(-50%) rotate(38deg);
           transform: translateX(-50%) rotate(38deg);
 }
-.tor2-sol {
+.screw2-sol {
   top: 135px;
 }
-.tor2-sol:after {
+.screw2-sol:after {
   content: '|';
   color: #999999;
   position: absolute;
@@ -234,10 +254,10 @@ body {
   -webkit-transform: translateX(-50%) rotate(56deg);
           transform: translateX(-50%) rotate(56deg);
 }
-.tor2-la {
+.screw2-la {
   top: 125px;
 }
-.tor2-la:after {
+.screw2-la:after {
   content: '|';
   color: #999999;
   position: absolute;
@@ -246,10 +266,10 @@ body {
   -webkit-transform: translateX(-50%) rotate(18deg);
           transform: translateX(-50%) rotate(18deg);
 }
-.tor2-si {
+.screw2-si {
   top: 115px;
 }
-.tor2-si:after {
+.screw2-si:after {
   content: '|';
   color: #999999;
   position: absolute;
@@ -258,10 +278,10 @@ body {
   -webkit-transform: translateX(-50%) rotate(56deg);
           transform: translateX(-50%) rotate(56deg);
 }
-.tor2-do2 {
+.screw2-do2 {
   top: 105px;
 }
-.tor2-do2:after {
+.screw2-do2:after {
   content: '|';
   color: #999999;
   position: absolute;
