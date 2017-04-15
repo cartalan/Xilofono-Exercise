@@ -3,17 +3,56 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Xilófono - HTML | CSS | JS</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://use.fontawesome.com/6de1cb3107.js"></script>
 </head>
 <body>
-	<div class="container">
-		<div class="note note-style" id="1">DO</div>
-		<div class="note note-style" id="2">RE</div>
-		<div class="note note-style" id="3">MI</div>
-		<div class="note note-style" id="4">FA</div>
-		<div class="note note-style" id="5">SOL</div>
-		<div class="note note-style" id="6">LA</div>
-		<div class="note note-style" id="7">SI</div>
-		<div class="note note-style" id="8">DO</div>
-	</div>
+<div class="wrapper">
+  <div class="container">
+    <div class="note note-do1" id="0">
+      <div class="tor1 tor1-do1"></div>
+      <div class="tor2 tor2-do1"></div>
+    </div>
+    <div class="note note-re" id="1">
+      <div class="tor1 tor1-re"></div>
+      <div class="tor2 tor2-re"></div>
+    </div>
+    <div class="note note-mi" id="2">
+      <div class="tor1 tor1-mi"></div>
+      <div class="tor2 tor2-mi"></div>
+    </div>
+    <div class="note note-fa" id="3">
+      <div class="tor1 tor1-fa"></div>
+      <div class="tor2 tor2-fa"></div>
+    </div>
+    <div class="note note-sol" id="4">
+      <div class="tor1 tor1-sol"></div>
+      <div class="tor2 tor2-sol"></div>
+    </div>
+    <div class="note note-la" id="5">
+      <div class="tor1 tor1-la"></div>
+      <div class="tor2 tor2-la"></div>
+    </div>
+    <div class="note note-si" id="6">
+      <div class="tor1 tor1-si"></div>
+      <div class="tor2 tor2-si"></div>
+    </div>
+    <div class="note note-do2" id="7">
+      <div class="tor1 tor1-do2"></div>
+      <div class="tor2 tor2-do2"></div>
+    </div>
+  </div>
+  <div class="btn"><i class="fa fa-music" aria-hidden="true"></i></div>
+</div>
+<audio src="https://raw.githubusercontent.com/cartalan/Xilofono-Exercise/master/sound/1-DO.mp3" class="sound"></audio>
+<audio src="https://raw.githubusercontent.com/cartalan/Xilofono-Exercise/master/sound/2-RE.mp3" class="sound"></audio>
+<audio src="https://raw.githubusercontent.com/cartalan/Xilofono-Exercise/master/sound/3-MI.mp3" class="sound"></audio>
+<audio src="https://raw.githubusercontent.com/cartalan/Xilofono-Exercise/master/sound/4-FA.mp3" class="sound"></audio>
+<audio src="https://raw.githubusercontent.com/cartalan/Xilofono-Exercise/master/sound/5-SOL.mp3" class="sound"></audio>
+<audio src="https://raw.githubusercontent.com/cartalan/Xilofono-Exercise/master/sound/6-LA.mp3" class="sound"></audio>
+<audio src="https://raw.githubusercontent.com/cartalan/Xilofono-Exercise/master/sound/7-SI.mp3" class="sound"></audio>
+<audio src="https://raw.githubusercontent.com/cartalan/Xilofono-Exercise/master/sound/8-DO.mp3" class="sound"></audio>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
